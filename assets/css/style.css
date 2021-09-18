@@ -2,18 +2,33 @@
     background: #f1f1f1;
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas:
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
 }
 
-.cabecalho {}
+.cabecalho {
+    background-color: #00cc99;
+    grid-area: cabecalho;
+}
 
 .menu-cabecalho {
-    margin: 30px;
+    margin: 10px 0 0 0;
 }
 
 .menu-cabecalho a {
     margin: 0 20px;
 }
 
-.conteudo {}
+.conteudo {
+    background-color: #ff8080;
+    grid-area: conteudo;
+}
 
-.rodape {}
+.rodape {
+    background: #0099ff;
+    grid-area: rodape;
+}
